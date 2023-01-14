@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{% static 'main/css/geography.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Devops-инженер</title>
+ </head>
+ <body>
+  <header class="header">
+    <div class="empty-block"></div>
+    <a class="logo" href="/">DevOps</a>
+    <div class="empty-block"></div>
+    <a class="log-in" href="">
+      <img class="log-in-image" src="{% static 'main/assets/icons/log-in.svg' %}">
+      <p class="log-in-text">Войти</p>
+    </a>
+  </header>
+  <main class="main">
+    <aside class="menu">
+      <nav>
+        <ul>
+          <li class="menu-item menu-item-1">
+            <img src="{% static 'main/assets/icons/main-page.svg' %}">
+            <a href="/">Главная страница</a>
+          </li>
+          <li class="menu-item menu-item-2">
+            <img src="{% static 'main/assets/icons/demand.svg' %}">
+            <a href="/demand">Востребованность</a>
+          </li>
+          <li class="menu-item menu-item-3">
+            <img src="{% static 'main/assets/icons/geography.svg' %}">
+            <a href="/geography">География</a>
+          </li>
+          <li class="menu-item menu-item-4">
+            <img src="{% static 'main/assets/icons/skills.svg' %}">
+            <a href="/skills">Навыки</a>
+          </li>
+          <li class="menu-item menu-item-5">
+            <img src="{% static 'main/assets/icons/latest-vacancies.svg' %}">
+            <a href="/latest-vacancies">Последние вакансии</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Уровень зарплат по городам (в порядке убывания).</th>
+              </tr>
+                <tr>
+                    <th>Город</th>
+                    <th>Уровень зарплат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Киев</td>
+                    <td>155942</td>
+                </tr>
+                <tr>
+                    <td>Москва</td>
+                    <td>109916</td>
+                </tr>
+                <tr>
+                    <td>Санкт-Петербург</td>
+                    <td>95863</td>
+                </tr>
+                <tr>
+                    <td>Минск</td>
+                    <td>89762</td>
+                </tr>
+                <tr>
+                    <td>Новосибирск</td>
+                    <td>86183</td>
+                </tr>
+                <tr>
+                    <td>Екатеринбург</td>
+                    <td>82063</td>
+                </tr>
+                <tr>
+                    <td>Нижний Новгород</td>
+                    <td>76677</td>
+                </tr>
+                <tr>
+                    <td>Казань</td>
+                    <td>75695</td>
+                </tr>
+                <tr>
+                    <td>Самара</td>
+                    <td>69896</td>
+                </tr>
+                <tr>
+                    <td>Томск</td>
+                    <td>69552</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/area_salary.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Доля вакансий по городам (в порядке убывания).</th>
+              </tr>
+                <tr>
+                    <th>Город</th>
+                    <th>Доля вакансий</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Москва</td>
+                    <td>0.2573</td>
+                </tr>
+                <tr>
+                    <td>Санкт-Петербург</td>
+                    <td>0.1131</td>
+                </tr>
+                <tr>
+                    <td>Новосибирск</td>
+                    <td>0.0324</td>
+                </tr>
+                <tr>
+                    <td>Минск</td>
+                    <td>0.0283</td>
+                </tr>
+                <tr>
+                    <td>Екатеринбург</td>
+                    <td>0.0239</td>
+                </tr>
+                <tr>
+                    <td>Алматы</td>
+                    <td>0.0225</td>
+                </tr>
+                <tr>
+                    <td>Казань</td>
+                    <td>0.0222</td>
+                </tr>
+                <tr>
+                    <td>Краснодар</td>
+                    <td>0.0205</td>
+                </tr>
+                <tr>
+                    <td>Нижний Новгород</td>
+                    <td>0.0186</td>
+                </tr>
+                <tr>
+                    <td>Ростов-на-Дону</td>
+                    <td>0.0186</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/area_count.png' %}">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="empty-block"></div>
+    <div class="student-info">
+      <p class="full-name">ФИО студента:</p>
+      <p class="academic-group">Ренёв Глеб Олегович</p>
+      <p class="full-name">Академическая группа:</p>
+      <p class="academic-group">РИ-210914</p>
+    </div>
+  </footer>
+ </body>
+</html>

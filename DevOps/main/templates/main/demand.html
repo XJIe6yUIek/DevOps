@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{% static 'main/css/demand.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Devops-инженер</title>
+ </head>
+ <body>
+  <header class="header">
+    <div class="empty-block"></div>
+    <a class="logo" href="/">DevOps</a>
+    <div class="empty-block"></div>
+    <a class="log-in" href="">
+      <img class="log-in-image" src="{% static 'main/assets/icons/log-in.svg' %}">
+      <p class="log-in-text">Войти</p>
+    </a>
+  </header>
+  <main class="main">
+    <aside class="menu">
+      <nav>
+        <ul>
+          <li class="menu-item menu-item-1">
+            <img src="{% static 'main/assets/icons/main-page.svg' %}">
+            <a href="/">Главная страница</a>
+          </li>
+          <li class="menu-item menu-item-2">
+            <img src="{% static 'main/assets/icons/demand.svg' %}">
+            <a href="/demand">Востребованность</a>
+          </li>
+          <li class="menu-item menu-item-3">
+            <img src="{% static 'main/assets/icons/geography.svg' %}">
+            <a href="/geography">География</a>
+          </li>
+          <li class="menu-item menu-item-4">
+            <img src="{% static 'main/assets/icons/skills.svg' %}">
+            <a href="/skills">Навыки</a>
+          </li>
+          <li class="menu-item menu-item-5">
+            <img src="{% static 'main/assets/icons/latest-vacancies.svg' %}">
+            <a href="/latest-vacancies">Последние вакансии</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+      
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Динамика уровня зарплат по годам</th>
+              </tr>
+                <tr>
+                    <th>Год</th>
+                    <th>Уровень зарплат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>57259</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>67729</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>69632</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>91804</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>79153</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>75569</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>86650</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>102513</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/years_salary.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Динамика количества вакансий по годам</th>
+              </tr>
+                <tr>
+                    <th>Год</th>
+                    <th>Число вакансий</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>9538</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>28916</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>38682</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>58478</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>70559</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>87249</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>54116</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>17030</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/years_count.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Динамика уровня зарплат по годам для профессии Devops-инженер</th>
+              </tr>
+                <tr>
+                    <th>Год</th>
+                    <th>Уровень зарплат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>110782</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>159196</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>121498</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>136086</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>139039</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>145027</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>188238</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>218635</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/years_salary_vac.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Динамика количества вакансий по годам для профессии Devops-инженер</th>
+              </tr>
+                <tr>
+                    <th>Год</th>
+                    <th>Число вакансий</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>107</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>359</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>513</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>638</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>475</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>172</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/years_count_vac.png' %}">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="empty-block"></div>
+    <div class="student-info">
+      <p class="full-name">ФИО студента:</p>
+      <p class="academic-group">Ренёв Глеб Олегович</p>
+      <p class="full-name">Академическая группа:</p>
+      <p class="academic-group">РИ-210914</p>
+    </div>
+  </footer>
+ </body>
+</html>

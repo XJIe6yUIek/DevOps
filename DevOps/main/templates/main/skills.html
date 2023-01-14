@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{% static 'main/css/geography.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Devops-инженер</title>
+ </head>
+ <body>
+  <header class="header">
+    <div class="empty-block"></div>
+    <a class="logo" href="/">DevOps</a>
+    <div class="empty-block"></div>
+    <a class="log-in" href="">
+      <img class="log-in-image" src="{% static 'main/assets/icons/log-in.svg' %}">
+      <p class="log-in-text">Войти</p>
+    </a>
+  </header>
+  <main class="main">
+    <aside class="menu">
+      <nav>
+        <ul>
+          <li class="menu-item menu-item-1">
+            <img src="{% static 'main/assets/icons/main-page.svg' %}">
+            <a href="/">Главная страница</a>
+          </li>
+          <li class="menu-item menu-item-2">
+            <img src="{% static 'main/assets/icons/demand.svg' %}">
+            <a href="/demand">Востребованность</a>
+          </li>
+          <li class="menu-item menu-item-3">
+            <img src="{% static 'main/assets/icons/geography.svg' %}">
+            <a href="/geography">География</a>
+          </li>
+          <li class="menu-item menu-item-4">
+            <img src="{% static 'main/assets/icons/skills.svg' %}">
+            <a href="/skills">Навыки</a>
+          </li>
+          <li class="menu-item menu-item-5">
+            <img src="{% static 'main/assets/icons/latest-vacancies.svg' %}">
+            <a href="/latest-vacancies">Последние вакансии</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2015</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nginx</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Cisco</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Администрирование сетевого оборудования</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Apache HTTP Server</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills1.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2016</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>Unix</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Apache HTTP Server</td>
+                    <td>14</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills2.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2017</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>102</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>58</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>Unix</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills3.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2018</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>342</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>232</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>182</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>171</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>167</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>156</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>138</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>132</td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>118</td>
+                </tr>
+                <tr>
+                    <td>Jenkins</td>
+                    <td>117</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills4.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2019</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>663</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>372</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>364</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>328</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>324</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>321</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>Ansible</td>
+                    <td>243</td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>231</td>
+                </tr>
+                <tr>
+                    <td>Jenkins</td>
+                    <td>217</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills5.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2020</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>1080</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>555</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>551</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>525</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>505</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>494</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>454</td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>412</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>355</td>
+                </tr>
+                <tr>
+                    <td>Ansible</td>
+                    <td>339</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills6.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2021</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>1422</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>763</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>721</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>703</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>603</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>586</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>575</td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>524</td>
+                </tr>
+                <tr>
+                    <td>Ansible</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>Kubernetes</td>
+                    <td>447</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills7.png' %}">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">2022</th>
+              </tr>
+                <tr>
+                    <th>Навык</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux</td>
+                    <td>1539</td>
+                </tr>
+                <tr>
+                    <td>Docker</td>
+                    <td>865</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>770</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>763</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>636</td>
+                </tr>
+                <tr>
+                    <td>Nginx</td>
+                    <td>628</td>
+                </tr>
+                <tr>
+                    <td>Администрирование серверов Linux</td>
+                    <td>587</td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>577</td>
+                </tr>
+                <tr>
+                    <td>Kubernetes</td>
+                    <td>516</td>
+                </tr>
+                <tr>
+                    <td>Ansible</td>
+                    <td>481</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'main/graphics/skills8.png' %}">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="empty-block"></div>
+    <div class="student-info">
+      <p class="full-name">ФИО студента:</p>
+      <p class="academic-group">Ренёв Глеб Олегович</p>
+      <p class="full-name">Академическая группа:</p>
+      <p class="academic-group">РИ-210914</p>
+    </div>
+  </footer>
+ </body>
+</html>
